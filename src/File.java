@@ -1,3 +1,5 @@
+import java.sql.Timestamp;
+
 public class File extends StorageItem {
     private String content;
     private String ending;
@@ -22,11 +24,7 @@ public class File extends StorageItem {
 
     @Override
     public void printTree(SortingField field){
-//        Comparator<StorageItem> employeeNameComparator
-//                = Comparator.comparing(StorageItem::getName);
-//
-//        Arrays.sort(employees, employeeNameComparator);
-        System.out.println(this.name);
+        System.out.println(this.getName());
     }
 
     public void addContent(String content){
@@ -34,8 +32,10 @@ public class File extends StorageItem {
     }
 
     public void printContent(){
-        System.out.println(this.name + " Size: " + this.getSize()
-                + "Mb Created: " + this.date);
+        Timestamp temp = new Timestamp(this.getDate());
+        String date = temp.toString();
+        System.out.println(this.getName() + " Size: " + this.getSize()
+                + "MB Created: " + date);
         System.out.println(this.content); //Verify if needed
     }
 }

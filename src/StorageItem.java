@@ -12,7 +12,7 @@ public abstract class StorageItem {
         long tsStart = start.getTime();
         long tsEnd = end.getTime();
         long gap = tsEnd - tsStart;
-        long tempLong = Main.rnd.nextLong();
+        long tempLong = Math.abs(Main.rnd.nextLong());
         this.name = name;
         this.date = tsStart + (tempLong % gap);
         this.size = size;

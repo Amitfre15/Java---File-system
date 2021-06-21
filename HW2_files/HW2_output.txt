@@ -20,16 +20,16 @@ A
 
 Sorting by date:
 A
-|    aa.py
 |    B
-|    |    bye.log
 |    |    C
 |    |    |    code.java
+|    |    bye.log
 |    Aa.txt
+|    aa.py
 
 
 File has been found: aa.py
-aa.py Created: 2019-12-06 11:51:15.182
+aa.py Size: 20MB Created: 2021-11-14 10:03:13.182
 print("Hello World")
 
 
@@ -37,7 +37,7 @@ File does not exist: B/code.java
 
 
 File has been found: B/C/code.java
-code.java Created: 2018-08-10 14:41:39.272
+code.java Size: 75MB Created: 2021-02-09 21:19:05.272
 class A {
     public A() {
         System.out.println("Hey there");
